@@ -12,10 +12,10 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
   </head>
   <body>
-    <div class="card" style="width: 25rem">
-      <div class="card-body"></div>
+
       <form id="search-form">
         <div class="input-group mb-3" id="search-city">
           <input
@@ -26,19 +26,24 @@
             aria-label="city"
             aria-describedby="basic-addon1"
           />
-          <button type="button" class="btn btn-primary">Search</button>
+          <button type="button" class="btn btn-primary" id="button">Search</button>
         </div>
          </div>
       </form>
-      <h1>Fairfax</h1>
-      <h2>Temperature</h2>
+      <h1 class="city" id="search-city">Fairfax</h1>
+      <h2 class="temp" id="current-temperature">Temperature °C | °F</h2>
+      <h3 class="items" id="current-items">
       <ul>
-        <li>Clouds</li>
-        <li>Humidity</li>
-        <li>Wind</li>
+        <li class="clouds" id="current-clouds">Clouds</li>
+        <li class="humidity" id="current-humidity">Humidity</li>
+        <li class="wind" id="current-wind">Wind</li>
       </ul>
-    <h3>
-        Latest update: Day Time
     </h3>
+    <h4>
+        Latest update: Day Time
+    </h4>
+    <script src="src/app.js">
+
+    </script>
   </body>
 </html>

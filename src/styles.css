@@ -1,0 +1,28 @@
+body {
+  background-color: aliceblue;
+  margin: 100px auto;
+  padding: 50px;
+  border: 1px solid;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 25px;
+}
+li {
+  font-size: 16px;
+  list-style: none;
+  text-align: right;
+  padding-right: 75px;
+}
+h4 {
+  font-size: small;
+}
+.btn {
+  color: #ffff;
+  background-color: rgb(227, 145, 15);
+  border-color: rgb(227, 145, 15);
+}
