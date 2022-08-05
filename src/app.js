@@ -1,6 +1,14 @@
 let now = new Date();
 let date = now.getDate();
-let days = ["Sunday", "Monday", "Tuesday", "Friday", "Saturday"];
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 let day = days[now.getDate()];
 let hours = now.getHours();
@@ -19,10 +27,36 @@ function showTemperature(response) {
 
 function changeCity(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-city");
+  let city = document.querySelector("#enter-city").value;
   let h1 = document.querySelector("#current-city");
-  h1.innerHTML = city.toUpperCase();
+  h1.innerHTML = city;
   let apiKey = "bb0d4750adbaf8dd371419162d9174d1";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(changeClouds);
+  axios.get(apiUrl).then(changeWind);
+  axios.get(apiUrl).then(changeHumidity);
 }
+
+function changeClouds(response) {
+  let clouds = response.data.clouds.all;
+  let cloudMessage = `${clouds}% Clouds`;
+  let h3 = document.querySelector("#current-clouds");
+  h3.innerHTML = cloudMessage;
+}
+
+function changeWind(response) {
+  let wind = response.data.wind.speed;
+  let windMessage = `Wind speed ${wind}`;
+  let h3 = document.querySelector("#current-wind");
+  h3.innerHTML = windMessage;
+}
+
+function changeHumidity(response) {
+  let humidity = response.data.main.humidity;
+  let humidityMessage = `Humidity ${humidity}`;
+  let h3 = document.querySelector("#current-humidity");
+  h3.innerHTML = humidityMessage;
+}
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", changeCity);

@@ -9,6 +9,11 @@ body {
 h1 {
   font-size: 45px;
 }
+
+h1::first-letter {
+  text-transform: capitalize;
+}
+
 h2 {
   font-size: 25px;
 }

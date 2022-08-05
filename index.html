@@ -12,38 +12,40 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="src/styles.css">
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-      <form id="search-form">
-        <div class="input-group mb-3" id="search-city">
-          <input
-            type="text"
-            class="form-control"
-            id="enter-city"
-            placeholder="Enter city"
-            aria-label="city"
-            aria-describedby="basic-addon1"
-          />
-          <button type="button" class="btn btn-primary" id="search-city">Search</button>
-        </div>
-         </div>
-      </form>
-      <h1 class="city" id="current-city">Fairfax</h1>
-      <h2 class="temp" id="current-temperature">Temperature °C | °F</h2>
-      <h3 class="items" id="current-items">
+    <form id="search-form">
+      <div class="input-group mb-3" id="search-city">
+        <input
+          type="text"
+          class="form-control"
+          id="enter-city"
+          placeholder="Enter city"
+          aria-label="city"
+          aria-describedby="basic-addon1"
+        />
+        <button type="button" class="btn btn-primary" id="enter-city">
+          Search
+        </button>
+      </div>
+    </form>
+    <h1 class="city" id="current-city">Fairfax</h1>
+    <h2 class="temp" id="current-temperature">Temperature °C | °F</h2>
+    <h3 class="items" id="current-items">
       <ul>
         <li class="clouds" id="current-clouds">Clouds</li>
         <li class="humidity" id="current-humidity">Humidity</li>
         <li class="wind" id="current-wind">Wind</li>
       </ul>
     </h3>
-    <h4>
-        Latest update: <span id="day-time">Day Time</span>
-    </h4>
-    <script src="src/app.js">
-
-    </script>
+    <h4>Latest update: <span id="day-time">Day Time</span></h4>
+    <script src="src/app.js"></script>
   </body>
 </html>
