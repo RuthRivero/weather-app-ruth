@@ -43,3 +43,9 @@ h4 {
   background-color: rgb(233, 193, 133);
   border-color: rgb(233, 193, 133);
 }
+
+.weather-icon {
+  background-color: rgb(217, 214, 210);
+  border-radius: 45px;
+  margin-right: 35px;
+}
