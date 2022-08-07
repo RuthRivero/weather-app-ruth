@@ -51,21 +51,21 @@ function changeCity(event) {
 
 function changeClouds(response) {
   let clouds = response.data.clouds.all;
-  let cloudMessage = `${clouds}% Clouds`;
+  let cloudMessage = `${clouds}%`;
   let h3 = document.querySelector("#current-clouds");
   h3.innerHTML = cloudMessage;
 }
 
 function changeWind(response) {
   let wind = response.data.wind.speed;
-  let windMessage = `Wind speed ${wind}`;
+  let windMessage = `${wind}`;
   let h3 = document.querySelector("#current-wind");
   h3.innerHTML = windMessage;
 }
 
 function changeHumidity(response) {
   let humidity = response.data.main.humidity;
-  let humidityMessage = `Humidity ${humidity}`;
+  let humidityMessage = `${humidity}%`;
   let h3 = document.querySelector("#current-humidity");
   h3.innerHTML = humidityMessage;
 }

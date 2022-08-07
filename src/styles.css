@@ -24,11 +24,8 @@ h1::first-letter {
 h2 {
   font-size: 25px;
 }
-li {
-  font-size: 16px;
-  list-style: none;
-  text-align: right;
-  padding-right: 75px;
+h3 {
+  font-size: 18px;
 }
 h4 {
   font-size: small;
