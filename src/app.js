@@ -25,6 +25,16 @@ function showTemperature(response) {
   h2.innerHTML = message;
 }
 
+function changeIcon(response) {
+  console.log(response);
+  let iconElement = response.data.weather[0].icon;
+  let h2 = document.querySelector("#icon");
+  h2.setAttribute(
+    "src",
+    `http://www.openweathermap.org/img/wn/${iconElement}@2x.png`
+  );
+}
+
 function changeCity(event) {
   event.preventDefault();
   let city = document.querySelector("#enter-city").value;
@@ -36,6 +46,7 @@ function changeCity(event) {
   axios.get(apiUrl).then(changeClouds);
   axios.get(apiUrl).then(changeWind);
   axios.get(apiUrl).then(changeHumidity);
+  axios.get(apiUrl).then(changeIcon);
 }
 
 function changeClouds(response) {

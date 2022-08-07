@@ -37,7 +37,14 @@
       </div>
     </form>
     <h1 class="city" id="current-city">Fairfax</h1>
-    <h2 class="temp" id="current-temperature">Temperature °C | °F</h2>
+    <h2>
+      <img
+        src="http://openweathermap.org/img/wn/10d@2x.png"
+        alt="Rain"
+        id="icon"
+        class="weather-icon"
+      /><span class="temp" id="current-temperature"> Temperature °C | °F </span>
+    </h2>
     <h3 class="items" id="current-items">
       <ul>
         <li class="clouds" id="current-clouds">Clouds</li>
@@ -45,7 +52,7 @@
         <li class="wind" id="current-wind">Wind</li>
       </ul>
     </h3>
-    <h4>Latest update: <span id="day-time">Day Time</span></h4>
+    <h4>Last updated: <span id="day-time">Day Time</span></h4>
     <script src="src/app.js"></script>
   </body>
 </html>
