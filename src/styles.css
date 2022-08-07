@@ -15,6 +15,8 @@ body {
 
 h1 {
   font-size: 45px;
+  padding-bottom: 25px;
+  padding-top: 10px;
 }
 
 h1::first-letter {
@@ -22,7 +24,7 @@ h1::first-letter {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h3 {
@@ -73,4 +75,9 @@ h4 {
   background-color: rgb(217, 214, 210);
   border-radius: 45px;
   margin-right: 35px;
+}
+
+.celsius {
+  color: black;
+  cursor: default;
 }

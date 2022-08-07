@@ -20,7 +20,7 @@ todayDate.innerHTML = `${day}, ${hours}:${minutes}`;
 
 function showTemperature(response) {
   temperature = Math.round(response.data.main.temp);
-  let message = `${temperature} °C | °F`;
+  let message = `${temperature}`;
   let h2 = document.querySelector("#current-temperature");
   h2.innerHTML = message;
 }
@@ -69,5 +69,26 @@ function changeHumidity(response) {
   let h3 = document.querySelector("#current-humidity");
   h3.innerHTML = humidityMessage;
 }
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (temperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let celsiusTemperature = temperature;
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = celsiusTemperature;
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", changeCity);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
