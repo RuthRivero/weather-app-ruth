@@ -24,9 +24,38 @@ h1::first-letter {
 h2 {
   font-size: 25px;
 }
+
 h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
+
+#current-clouds {
+  padding-right: 0px;
+  text-align: right;
+}
+
+#clouds {
+  padding-left: 6px;
+}
+
+#current-humidity {
+  padding-right: 0px;
+  text-align: right;
+}
+
+#humidity {
+  padding-left: 6px;
+}
+
+#current-wind {
+  padding-right: 0px;
+  text-align: right;
+}
+
+#wind {
+  padding-left: 6px;
+}
+
 h4 {
   font-size: small;
 }
@@ -35,7 +64,6 @@ h4 {
   background-color: rgb(227, 145, 15);
   border-color: rgb(227, 145, 15);
 }
-
 .btn:hover {
   background-color: rgb(233, 193, 133);
   border-color: rgb(233, 193, 133);

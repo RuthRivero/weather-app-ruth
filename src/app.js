@@ -51,7 +51,7 @@ function changeCity(event) {
 
 function changeClouds(response) {
   let clouds = response.data.clouds.all;
-  let cloudMessage = `${clouds}%`;
+  let cloudMessage = `${clouds}% `;
   let h3 = document.querySelector("#current-clouds");
   h3.innerHTML = cloudMessage;
 }
