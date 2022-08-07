@@ -27,50 +27,53 @@
     />
   </head>
   <body>
-    <form id="search-form">
-      <div class="input-group mb-3" id="search-city">
-        <input
-          type="text"
-          class="form-control"
-          id="enter-city"
-          placeholder="Enter city"
-          aria-label="city"
-          aria-describedby="basic-addon1"
+    <div class="weather-app">
+      <form id="search-form">
+        <div class="input-group mb-3" id="search-city">
+          <input
+            type="text"
+            class="form-control"
+            id="enter-city"
+            placeholder="Enter city"
+            aria-label="city"
+            aria-describedby="basic-addon1"
+          />
+          <button type="button" class="btn btn-primary" id="enter-city">
+            Search
+          </button>
+        </div>
+      </form>
+      <h1 class="city" id="current-city">City</h1>
+      <h2>
+        <img
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          alt="Rain"
+          id="icon"
+          class="weather-icon"
         />
-        <button type="button" class="btn btn-primary" id="enter-city">
-          Search
-        </button>
-      </div>
-    </form>
-    <h1 class="city" id="current-city">City</h1>
-    <h2>
-      <img
-        src="http://openweathermap.org/img/wn/10d@2x.png"
-        alt="Rain"
-        id="icon"
-        class="weather-icon"
-      />
-      <span class="temp" id="current-temperature"> Degrees </span>
-      <span class="active">
-        <a href="#" id="celsius-link" class="celsius">°C </a>
-        | <a href="#" id="fahrenheit-link" class="fahrenheit">°F</a>
-      </span>
-    </h2>
-    <h3 class="items" id="current-items">
-      <div class="row justify-content-end">
-        <div class="col-2" id="current-clouds"></div>
-        <div class="col-4" id="clouds">Clouds</div>
-      </div>
-      <div class="row justify-content-end">
-        <div class="col-2" id="current-humidity"></div>
-        <div class="col-4" id="humidity">Humidity</div>
-      </div>
-      <div class="row justify-content-end">
-        <div class="col-2" id="current-wind"></div>
-        <div class="col-4" id="wind">Wind Speed</div>
-      </div>
-    </h3>
-    <h4>Last updated: <span id="day-time">Day Time</span></h4>
-    <script src="src/app.js"></script>
+        <span class="temp" id="current-temperature"> Degrees </span>
+        <span class="active">
+          <a href="#" id="celsius-link" class="celsius">°C </a>
+          | <a href="#" id="fahrenheit-link" class="fahrenheit">°F</a>
+        </span>
+      </h2>
+      <h3 class="items" id="current-items">
+        <div class="row justify-content-end">
+          <div class="col-2" id="current-clouds"></div>
+          <div class="col-4" id="clouds">Clouds</div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-2" id="current-humidity"></div>
+          <div class="col-4" id="humidity">Humidity</div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-2" id="current-wind"></div>
+          <div class="col-4" id="wind">Wind Speed</div>
+        </div>
+      </h3>
+      <h4>Last updated: <span id="day-time">Day Time</span></h4>
+      <script src="src/app.js"></script>
+    </div>
+    <p>Open source code</p>
   </body>
 </html>
