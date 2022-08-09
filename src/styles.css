@@ -70,6 +70,9 @@ h4 {
   font-family: "Heebo", sans-serif;
   color: rgb(172, 109, 8);
   font-weight: 500px;
+  padding-top: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .btn {
   color: #ffff;
@@ -105,4 +108,15 @@ p {
   max-width: 600px;
   padding-left: 300px;
   font-family: "Heebo", sans-serif;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.high-low {
+  font-size: 13px;
 }
