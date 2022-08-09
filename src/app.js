@@ -1,16 +1,15 @@
 let now = new Date();
 let date = now.getDate();
 let days = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
-
-let day = days[now.getDate() - 1];
+let day = days[now.getDay()];
 let hours = now.getHours();
 let minutes = now.getMinutes();
 let temperature;
