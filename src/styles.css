@@ -120,3 +120,7 @@ p {
 .high-low {
   font-size: 13px;
 }
+
+.low {
+  color: rgb(109, 111, 113);
+}
