@@ -117,10 +117,11 @@ p {
   text-align: center;
 }
 
-.high-low {
+.high {
   font-size: 13px;
 }
 
 .low {
   color: rgb(109, 111, 113);
+  font-size: 13px;
 }

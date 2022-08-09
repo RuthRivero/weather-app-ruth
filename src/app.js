@@ -87,6 +87,33 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = celsiusTemperature;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col">
+        Wed
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wed-icon" id="day-one-icon" width="36"/>
+        <div class="high">18° | <span class="low">12°</span></div>
+      </div>
+    </div> 
+`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col">
+        Wed
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="wed-icon" id="day-one-icon" width="36"/>
+        <div class="high">18° | <span class="low">12°</span></div>
+      </div>
+    </div> 
+`;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", changeCity);
 
