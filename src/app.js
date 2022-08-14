@@ -25,7 +25,6 @@ function showTemperature(response) {
 }
 
 function changeIcon(response) {
-  console.log(response);
   let iconElement = response.data.weather[0].icon;
   let h2 = document.querySelector("#icon");
   h2.setAttribute(
@@ -71,7 +70,6 @@ function changeHumidity(response) {
 }
 
 function formatDay(timestamp) {
-  console.log(timestamp);
   let forecastDate = new Date(timestamp * 1000);
   let forecastWeekDay = forecastDate.getDay();
   let forecastDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
