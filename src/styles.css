@@ -8,7 +8,7 @@ body {
 }
 
 .weather-app {
-  margin: 100px 100px 50px 200px;
+  margin: 100px 100px 50px 300px;
   padding: 50px;
   border: 1px solid;
   max-width: 600px;
@@ -90,23 +90,11 @@ h4 {
   margin-right: 35px;
 }
 
-.active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-  font-size: 16px;
-  top: -20px;
-}
-
-.active :hover {
-  text-decoration: none;
-}
-
 p {
   text-align: center;
   margin-bottom: 100px;
-  max-width: 600px;
-  padding-left: 300px;
+  margin-top: 20px;
+  padding-top: 10px;
   font-family: "Heebo", sans-serif;
 }
 
